@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  redis:
+    port: 6379
+    host: localhost
+    password:
+    database: 0
+    #lettuce\u5BA2\u6237\u7AEF\u914D\u7F6E
+    lettuce:
+      #\u8FDE\u63A5\u6C60
+      pool:
+        #\u6700\u5927\u8FDE\u63A5\u6570
+        max-wait: 8
+        #\u6700\u5927\u7A7A\u95F2\u8FDE\u63A5\u6570
+        max-idle: 8
+        #\u6700\u5C0F\u7A7A\u95F2\u8FDE\u63A5\u6570
+        min-idle: 0
